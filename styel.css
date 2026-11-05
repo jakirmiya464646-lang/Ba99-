@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Noto Sans Bengali', sans-serif;
+  background: #0f172a;
+  color: white;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.logo-text {
+  background: linear-gradient(90deg, #fbbf24, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.banner-gradient {
+  background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);
+}
+
+.game-card {
+  transition: transform 0.15s, opacity 0.2s;
+}
+
+.game-card:active {
+  transform: scale(0.96);
+}
+
+.bottom-nav {
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.sidebar-btn.active {
+  background: #ef4444;
+  color: white;
+}
+
+/* Modal & Overlay Animations */
+.modal {
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.modal-active {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
